@@ -3,11 +3,10 @@
 #
 chart 0 Name 111
 chart 1 name 222
-/opt/clicksecurity/data/_log/click-mpu.log 
-	0 0 mpu_eps eps=(\d+)
-/opt/clicksecurity/data/_log/click-dpu.decoders.log 
-	1 0 decoder_eps  eps=(\d+)
-/opt/clicksecurity/data/_log/click-dpu.core.log 
-	0 1 core_eps eps=(\d+)
+/path_to_master/master.log 
+	0 0 master_eventRate eventsPerSecond=(\d+)
+    1 0 master_dataRate(Mbps)  bandwidth=([\d\.]+)
+/path_to_slave/slave.log 
+	0 1 slave_eventRate  eventsPerSecond=(\d+)
 
 
