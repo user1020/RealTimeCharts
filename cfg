@@ -1,0 +1,13 @@
+#fileName  
+#one of more "chartId seriesId  seriesName regexp"
+#
+chart 0 Name 111
+chart 1 name 222
+/opt/clicksecurity/data/_log/click-mpu.log 
+	0 0 mpu_eps eps=(\d+)
+/opt/clicksecurity/data/_log/click-dpu.decoders.log 
+	1 0 decoder_eps  eps=(\d+)
+/opt/clicksecurity/data/_log/click-dpu.core.log 
+	0 1 core_eps eps=(\d+)
+
+
