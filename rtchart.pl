@@ -217,10 +217,10 @@ var charts = new Array();// global
  */
 function requestData() {
     request = $.ajax({
-        url: '/ajax/poll'
+        url: '/ajax/poll',
         cache: false
     });
-	request.done(function(response,textStatus,qjXHR) {
+	request.done(function(points) {
 		            var series;
             for (i=0; i<points.length; i++) {
 				chartId  = desc[i].chart;
